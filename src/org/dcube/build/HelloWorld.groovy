@@ -1,4 +1,4 @@
-package org.dcube.build.HelloWorld
+package org.dcube.build
 import org.dcube.IStepExecutor
 import org.dcube.ioc.ContextRegistry
 
