@@ -13,7 +13,7 @@ class HelloWorld implements Serializable {
         IStepExecutor steps = ContextRegistry.getContext().getStepExecutor()
 
 //        int returnStatus = steps.sh("echo \"building ${this._solutionPath}...\"")
-        int returnStatus = steps.sh("asdfhjsadgf")
+        int returnStatus = steps.sh("${this._solutionPath}")
         if (returnStatus != 0) {
             steps.error("Unable To Execute The Command")
         }
