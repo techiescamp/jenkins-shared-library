@@ -1,6 +1,6 @@
-# jenkins-shared-library-framework
+# Jenkins Shared Library Examples
 
-A Community Framework for CI/CD using Jenkins shared library
+A Jenkins shared library code examples with Jenkinfiles
 
 You can clone this repo and start using it in your Jenkins Pipelines.
 
