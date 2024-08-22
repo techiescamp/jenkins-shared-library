@@ -1,6 +1,6 @@
 def call(String recipient) {
     script {
-        def tplContent = libraryResource "com/dcube/notification/notify.tpl"
+        def tplContent = libraryResource "org/dcube/notification/notify.tpl"
 
         def buildStatus = currentBuild.currentResult
         def statusColor = buildStatus == 'SUCCESS' ? 'green' : 'red'
