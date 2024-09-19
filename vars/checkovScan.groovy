@@ -5,7 +5,7 @@ def call(String directory) {
                     writeFile file: "${WORKSPACE}/.checkov.yaml", text: tplContent
                 }
 
-    def checkovCommand = "checkov --directory ${directory}"
+    def checkovCommand = "checkov --directory ${directory} --config-file ${WORKSPACE}/.checkov.yaml"
 
     def checkovOutput = sh(script: checkovCommand, returnStatus: true)
 
