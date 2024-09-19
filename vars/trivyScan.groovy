@@ -1,6 +1,6 @@
 def kaniko() {
     script {
-        def tplContent = libraryResource "trivy/html.tpl"
+        def tplContent = libraryResource "org/dcube/trivy/html.tpl"
         writeFile file: "${WORKSPACE}/html.tpl", text: tplContent
 
         def trivyConfigContent = libraryResource "trivy/trivy.yml"
