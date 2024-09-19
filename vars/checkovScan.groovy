@@ -1,7 +1,7 @@
 def call(String directory) {
     
     script {
-                    def tplContent = libraryResource "checkov/.checkov.yaml"
+                    def tplContent = libraryResource "org/dcube/checkov/.checkov.yaml"
                     writeFile file: "${WORKSPACE}/.checkov.yaml", text: tplContent
                 }
 
