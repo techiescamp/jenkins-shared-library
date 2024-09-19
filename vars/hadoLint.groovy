@@ -1,7 +1,7 @@
 def call() {
     
     script {
-                    def tplContent = libraryResource "hadolint/.hadolint.yaml"
+                    def tplContent = libraryResource "org/dcube/hadolint/.hadolint.yaml"
                     writeFile file: "${WORKSPACE}/.hadolint.yaml", text: tplContent
                 }
 
